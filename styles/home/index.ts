@@ -15,6 +15,20 @@ export const HomeContainer = styled.div`
     padding: 150px 70px;
   }
 
+  @media only screen and (max-width: 600px) {
+    height: calc(100vh - 200px);
+    padding: 100px 50px;
+    grid-template:
+      "ip ip" 3fr
+      "line line" 1px
+      "title title" 2fr
+      "subtitle subtitle" 1fr
+      "buttons buttons" 1fr
+      "message message" 2fr
+      "empty1 empty2" 0.5fr
+      / 3fr 1fr;
+  }
+
   position: relative;
   grid-template:
     "empty1 empty2" 2fr
@@ -51,6 +65,12 @@ export const HomeContainer = styled.div`
     grid-area: empty2;
     align-self: flex-start;
     justify-self: flex-end;
+    /* 
+    @media only screen and (max-width: 600px) {
+      align-self: flex-end;
+
+      justify-self: flex-start;
+    } */
   }
 
   .ip {
@@ -122,6 +142,10 @@ export const HomeContainer = styled.div`
       left: 35px;
     }
 
+    @media only screen and (max-width: 600px) {
+      left: 25px;
+    }
+
     &.top {
       bottom: 0px;
       top: calc(55% + 35px);
@@ -139,6 +163,10 @@ export const HomeContainer = styled.div`
 
     @media only screen and (max-width: 1400px) {
       left: 45px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      left: 15px;
     }
 
     &.top {
