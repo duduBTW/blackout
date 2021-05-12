@@ -106,6 +106,9 @@ export const HomeContainer = styled.div`
 
   .buttons {
     grid-area: buttons;
+
+    display: flex;
+    gap: 30px;
   }
 
   .subtitle {
@@ -178,5 +181,56 @@ export const HomeContainer = styled.div`
       top: 0px;
       bottom: calc(45% + 50px);
     }
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  :hover {
+    .effect {
+      top: 0px;
+      bottom: -0px;
+      left: -0px;
+      right: 0px;
+    }
+  }
+
+  .button {
+    cursor: pointer;
+    height: 37.46px;
+    width: 160px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+
+    border: 1px solid white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: relative;
+    z-index: 3;
+    background: black;
+
+    :hover {
+      background: #2b2b2b;
+    }
+  }
+  .effect {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    z-index: 0;
+
+    top: 5px;
+    bottom: -5px;
+    left: -5px;
+    right: 5px;
+
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid white;
   }
 `;

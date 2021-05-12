@@ -1,21 +1,26 @@
 import React, { useState } from "react";
 import { HomeContainer } from "../styles/home";
 import ReactTooltip from "react-tooltip";
+import Button from "../styles/component/Button";
 
 export default function Inicio() {
   const defMessage = "Clique Para Copiar o IP";
   const [message, setMessage] = useState(defMessage);
+
+  const buttons = ["Loja", "Discord"];
+
   return (
     <>
-      <ReactTooltip type="light" getContent={() => message} />
+      <ReactTooltip
+        effect="solid"
+        place="bottom"
+        type="light"
+        getContent={() => message}
+      />
       <HomeContainer>
         <div className="empty1" />
         <div className="empty2">
-          <img
-            width="50px"
-            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg"
-            alt=""
-          />
+          <img width="50px" src="/ball.svg" alt="" />
         </div>
         <div
           data-tip={message}
@@ -37,6 +42,11 @@ export default function Inicio() {
         >
           <label>IP</label>
           <span id="ip">TESTE.IP.SERVIDOR.COM</span>
+        </div>
+        <div className="buttons">
+          {buttons.map((label) => (
+            <Button label={label} />
+          ))}
         </div>
 
         <h1 className="title">
