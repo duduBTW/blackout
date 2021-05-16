@@ -9,6 +9,13 @@ body {
 }
 
 @font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/Minecraft.ttf");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Helvetica Now Display";
   src: url("/fonts/HelveticaNowDisplay-Thin.ttf");
   font-weight: 200;

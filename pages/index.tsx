@@ -41,7 +41,7 @@ export default function Inicio() {
           className="ip"
         >
           <label>IP</label>
-          <span id="ip">TESTE.IP.SERVIDOR.COM</span>
+          <span id="ip">blackoutpixelmon.xyz</span>
         </div>
         <div className="buttons">
           {buttons.map((label) => (
@@ -56,10 +56,7 @@ export default function Inicio() {
         <div className="line"></div>
         <h3 className="subtitle">PIXELMON</h3>
 
-        <p className="message">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-          odio!
-        </p>
+        <p className="message">https://discord.gg/PcX2w8GqaW</p>
 
         <div className="line-y first top" />
         <div className="line-y first bottom" />

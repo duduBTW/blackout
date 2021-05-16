@@ -112,10 +112,10 @@ export const HomeContainer = styled.div`
   }
 
   .subtitle {
+    font-family: "Minecraft";
     justify-self: flex-end;
     grid-area: subtitle;
     font-size: clamp(18px, 1.5vw, 32px);
-    font-family: "Minecraft";
     letter-spacing: 0.2em;
   }
 
