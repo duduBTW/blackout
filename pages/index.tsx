@@ -41,7 +41,7 @@ export default function Inicio() {
           className="ip"
         >
           <label>IP</label>
-          <span id="ip">blackoutpixelmon.xyz</span>
+          <span id="ip">jogar.blackoutpixelmon.xyz</span>
         </div>
         <div className="buttons">
           {buttons.map((label) => (
