@@ -56,7 +56,7 @@ export default function Inicio() {
         <div className="line"></div>
         <h3 className="subtitle">PIXELMON</h3>
 
-        <p className="message">https://discord.gg/PcX2w8GqaW</p>
+        <p className="message">https://discord.gg/5gT6EAGCm3</p>
 
         <div className="line-y first top" />
         <div className="line-y first bottom" />
